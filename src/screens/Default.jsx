@@ -1,5 +1,5 @@
-import Logo from './_components/Logo';
-import Descripcion from './_components/Description';
+import Logo from './Default/_components/Logo';
+import Descripcion from './Default/_components/Description';
 import OpenLink from '../components/OpenLink';
 
 const Default = () => {
