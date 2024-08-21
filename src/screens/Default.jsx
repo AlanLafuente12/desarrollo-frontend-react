@@ -13,8 +13,8 @@ const Default = () => {
                     url='https://reactjs.org'
                 />
                 <OpenLink 
-                    title='Mi Perfil (Github)' 
-                    url='https://github.com/AlanLafuente12'
+                    title='Mi Proyecto (Github)' 
+                    url='https://github.com/AlanLafuente12/desarrollo-frontend-react.git'
                 />
             </header>
         </>
