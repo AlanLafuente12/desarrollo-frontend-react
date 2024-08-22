@@ -1,7 +1,7 @@
 import { SET_PRODUCTS } from './productTypes';
 
 const initialState = {
-    SET_PRODUCTS: [],
+    PRODUCTS: [],
 };
 
 const productReducer = ( state = initialState, action) => {

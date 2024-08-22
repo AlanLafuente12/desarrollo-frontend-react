@@ -14,7 +14,7 @@ const formReducer = (state = initialState, action) => {
                 ...state,
                 formData: {
                     ...state.formData,
-                    ...state.payload
+                    ...action.payload
                 }
             }
         }

@@ -15,8 +15,8 @@ const LoginForm = () => {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <h5>username {form.formData.username}</h5>
-                <h5>email {form.formData.email}</h5>
+                <h5>username: {form.formData.username}</h5>
+                <h5>email: {form.formData.email}</h5>
                 <div>
                     <label htmlFor="username">
                         Username
