@@ -2,6 +2,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Default from "../screens/Default";
 import Products from "../screens/Products";
+import LandingPage from "../screens/LandingPage";
 import LoginForm from "../screens/Forms/LoginForms";
 import App from "../App";
 
@@ -12,6 +13,14 @@ const routes = createBrowserRouter([
         path: '/',
         element: <App />,
         children: [
+            {
+                path: '/',
+                element: <LandingPage />,
+            },
+            {
+                path: '/landingpage',
+                element: <LandingPage />,
+            },
             {
                 path: '/default',
                 element: <Default />,

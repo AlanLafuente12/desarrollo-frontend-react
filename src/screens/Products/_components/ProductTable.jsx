@@ -1,7 +1,7 @@
 import ProductRow from './ProductRow';
 import ProductCategoryRow from './ProductCategoryRow';
 
-function ProductTable({ products }) {
+const ProductTable = ({ products }) => {
     const rows = [];
     let lastCategory = null;
   
@@ -26,7 +26,7 @@ function ProductTable({ products }) {
         <thead>
           <tr>
             <th>Nombre</th>
-            <th>Precio</th>
+            <th style={{textAlign:"right"}}>Precio</th>
           </tr>
         </thead>
         <tbody>{rows}</tbody>

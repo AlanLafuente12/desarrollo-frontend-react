@@ -32,10 +32,10 @@ const Contador = () => {
     return (
         <>
             <h4>Componente Contador</h4>
-            <h5>{contador}</h5>
-            <div>
-                <button onClick={handleContador1}>Aumentar</button>
+            <h5>Contador: {contador}</h5>
+            <div className="button-container">
                 <button onClick={handleContador2}>Disminuir</button>
+                <button onClick={handleContador1}>Aumentar</button>
             </div>
         </>
     );

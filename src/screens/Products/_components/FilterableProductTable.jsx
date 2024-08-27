@@ -1,10 +1,10 @@
 import SearchBar from './SearchBar';
 import ProductTable from './ProductTable';
 
-function FilterableProductTable({ products }) {
+const FilterableProductTable = ({ products, filter }) => {
     return (
       <div>
-        <SearchBar />
+        <SearchBar filter={filter}/>
         <ProductTable products={products} />
       </div>
     );

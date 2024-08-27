@@ -1,20 +1,30 @@
 import { Link } from 'react-router-dom';
 
+import { useSelector } from "react-redux";
+
 const Navbar = () => {
+
+
+    const data = useSelector((state) => state.formReducerRef.formData);
+    const saludo = data.username === '' || data.email === '' ? 'Inicie sesión': 
+        `Bienvenido ${data.username.charAt(0).toUpperCase()+data.username.slice(1)}: ${data.email}`;
     return (
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/default">Home</Link>
                 </li>
                 <li>
-                    <Link to="/default">Default</Link>
+                    <Link to="/landingpage">Landing</Link>
                 </li>
                 <li>
                     <Link to="/products">Product</Link>
                 </li>
                 <li>
                     <Link to="/login">Login</Link>
+                </li>
+                <li className='user-data'>
+                    <Link to="/login" style={{fontWeight: "normal"}}>{saludo}</Link>
                 </li>
             </ul>
         </nav>

@@ -8,7 +8,6 @@ const productReducer = ( state = initialState, action) => {
     switch (action.type){
         case SET_PRODUCTS : {
             return {
-                ...state,
                 PRODUCTS: action.payload,
             }
         }

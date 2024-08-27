@@ -1,4 +1,4 @@
-function ProductRow({ product }) {
+const ProductRow = ({ product }) => {
     const name = product.stocked ? product.name :
         <span style={{ color: 'red' }}>
         {product.name}
@@ -7,7 +7,7 @@ function ProductRow({ product }) {
     return (
         <tr>
         <td>{name}</td>
-        <td>{product.price}</td>
+        <td style={{textAlign:"right"}}>{product.price}</td>
         </tr>
     );
 }
