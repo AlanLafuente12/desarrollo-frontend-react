@@ -12,9 +12,6 @@ const Navbar = () => {
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Landing</Link>
-                </li>
-                <li>
                     <Link to="/default">Home</Link>
                 </li>
                 <li>
@@ -22,6 +19,9 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link to="/login">Login</Link>
+                </li>
+                <li>
+                    <Link to="/">Landing</Link>
                 </li>
                 <li className='user-data'>
                     <Link to="/login" style={{fontWeight: "normal"}}>{saludo}</Link>
