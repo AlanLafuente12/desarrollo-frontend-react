@@ -6,7 +6,7 @@ const Navbar = () => {
 
 
     const data = useSelector((state) => state.formReducerRef.formData);
-    const saludo = data.username === '' || data.email === '' ? 'Inicie sesión': 
+    const saludo = data.username === '' || data.email === '' ? 'Iniciar sesión': 
         `Bienvenido ${data.username.charAt(0).toUpperCase()+data.username.slice(1)}: ${data.email}`;
     return (
         <nav>
