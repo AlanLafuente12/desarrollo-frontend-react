@@ -18,10 +18,6 @@ const routes = createBrowserRouter([
                 element: <LandingPage />,
             },
             {
-                path: '/landingpage',
-                element: <LandingPage />,
-            },
-            {
                 path: '/default',
                 element: <Default />,
             },
