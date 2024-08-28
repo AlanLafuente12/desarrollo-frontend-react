@@ -26,7 +26,7 @@ const routes = createBrowserRouter([
                 element: <Products />,
             },
             {
-                path: '/login',
+                path: '/form',
                 element: <LoginForm />,
             },
         ]

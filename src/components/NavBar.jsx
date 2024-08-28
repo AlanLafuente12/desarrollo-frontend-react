@@ -18,13 +18,13 @@ const Navbar = () => {
                     <Link to="/products">Product</Link>
                 </li>
                 <li>
-                    <Link to="/login">Login</Link>
+                    <Link to="/form">Form</Link>
                 </li>
                 <li>
                     <Link to="/">Landing</Link>
                 </li>
                 <li className='user-data'>
-                    <Link to="/login" style={{fontWeight: "normal"}}>{saludo}</Link>
+                    <Link to="/form" style={{fontWeight: "normal"}}>{saludo}</Link>
                 </li>
             </ul>
         </nav>
