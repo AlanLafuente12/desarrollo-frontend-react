@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Link to="/">Landing</Link>
                 </li>
                 <li className='user-data'>
-                    <Link to="/form" style={{fontWeight: "normal"}}>{saludo}</Link>
+                    <Link to="/forms" style={{fontWeight: "normal"}}>{saludo}</Link>
                 </li>
             </ul>
         </nav>
